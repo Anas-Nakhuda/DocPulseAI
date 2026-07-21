@@ -1,0 +1,25 @@
+# Environment & Secret Keys
+.env
+*.env
+
+# Local FAISS Vector Store Index (Binary/Generated Data)
+faiss_index/
+
+# Python Cache & Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Streamlit Local Runtime Data
+.streamlit/
+
+# OS Specific Files
+.DS_Store
+Thumbs.db
