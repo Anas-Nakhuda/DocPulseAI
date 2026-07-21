@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📄 DocsPulse AI
+# 📄 DocPulse AI
 ### *Enterprise-Grade RAG Intelligence Engine*
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-DocsPulse_AI-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://docpulse-ai.streamlit.app/)
@@ -9,7 +9,7 @@
 [![FAISS](https://img.shields.io/badge/VectorDB-FAISS-00A8E8?style=for-the-badge)](https://github.com/facebookresearch/faiss)
 [![Gemini](https://img.shields.io/badge/LLM-Gemini%202.5%20Flash-8E44AD?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 
-[🌐 Access Deployed Web Application](https://docpulse-ai.streamlit.app/) • [📖 System Flow](#-system-architecture) • [🧪 Benchmarking](#-evaluation--benchmarking)
+[🌐 Live Demo](https://docpulse-ai.streamlit.app/) • [📖 System Flow](#-system-architecture) • [🧪 Benchmarking](#-evaluation--benchmarking)
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## 📌 Overview
 
-**DocsPulse AI** is a production-grade Retrieval-Augmented Generation (RAG) platform designed for fast, accurate, and hallucination-resistant document intelligence. 
+**DocPulse AI** is a production-grade Retrieval-Augmented Generation (RAG) platform designed for fast, accurate, and hallucination-resistant document intelligence. 
 
 By leveraging **Local HuggingFace Embeddings**, **FAISS Vector Indexing**, and **Google Gemini**, DocsPulse AI extracts structured knowledge from unstructured PDFs, DOCX, and TXT files while keeping document retrieval transparent with direct page/source citations.
 
@@ -25,7 +25,7 @@ By leveraging **Local HuggingFace Embeddings**, **FAISS Vector Indexing**, and *
 
 ## ⚡ System Architecture
 
-### Visual Pipeline Flow (Interactive Diagram)
+### Visual Pipeline Flow
 
 ```mermaid
 graph TD
@@ -49,6 +49,8 @@ graph TD
     UI -->|Ask Question| FAISS
     FAISS -->|Top-K Relevant Chunks| Gemini
     Gemini -->|Streamed Answer + Page Citations| UI
+
+
 
     +-----------------------------------------------------------------------------------+
 |                                  USER INTERFACE                                   |
@@ -138,11 +140,11 @@ streamlit run app.py
 
 ### 🌟 Support the Project
 
-If you found **DocsPulse AI** useful or interesting, please consider giving this repository a star on GitHub!
+If you found **DocPulse AI** useful or interesting, please consider giving this repository a star on GitHub!
 
 [![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/DocPulseAI?style=social)](https://github.com/YOUR_USERNAME/DocPulseAI)
 
-**[🚀 Launch DocsPulse AI Live Demo](https://docpulse-ai.streamlit.app/)**
+**[🚀 Launch DocPulse AI Live Demo](https://docpulse-ai.streamlit.app/)**
 
 </div>
 
