@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://langchain.com)
 [![FAISS](https://img.shields.io/badge/VectorDB-FAISS-00A8E8?style=for-the-badge)](https://github.com/facebookresearch/faiss)
-[![Gemini](https://img.shields.io/badge/LLM-Gemini%202.5%20Flash-8E44AD?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
+[![Gemini](https://img.shields.io/badge/LLM-Gemini%203.1%20Flash%20Lite-8E44AD?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 
 [🌐 Live Demo](https://docpulse-ai.streamlit.app/) • [📖 System Architecture](#-system-architecture) • [🚀 Quickstart](#-quickstart-guide-local-setup)
 
@@ -40,7 +40,7 @@ graph TD
     Parser["🧩 Text Chunking & Metadata<br/>(RecursiveCharacterTextSplitter)"]:::extract
     HF["⚡ Local Vector Engine<br/>(HuggingFace all-MiniLM-L6-v2)"]:::embed
     FAISS[("🗄️ FAISS Vector Store<br/>(Disk Persistent index.faiss)")]:::store
-    Gemini["🤖 LLM Synthesis Engine<br/>(Google Gemini 2.5 Flash)"]:::llm
+    Gemini["🤖 LLM Synthesis Engine<br/>(Google Gemini 3.1 Flash Lite)"]:::llm
 
     UI -->|Upload Document| Ingest
     Ingest -->|Raw Document Text| Parser
@@ -89,7 +89,7 @@ graph TD
                                          v
 +-----------------------------------------------------------------------------------+
 |                             LLM SYNTHESIS & CITATION                              |
-|                     Google Gemini API (gemini-2.5-flash)                          |
+|              Google Gemini API (gemini-3.1-flash-lite / 3-flash-preview)           |
 |               Structured Prompt + Retrieved Context + Page Citations              |
 +-----------------------------------------------------------------------------------+
 ```
@@ -104,7 +104,7 @@ graph TD
 | **Document Parsers** | PyMuPDF (`fitz`), `python-docx` | High-fidelity multi-format text & page extraction |
 | **Embedding Engine** | HuggingFace (`sentence-transformers`) | Local 384-dimensional dense vector creation |
 | **Vector Index** | FAISS (Facebook AI Similarity Search) | High-performance similarity search & disk storage |
-| **LLM Provider** | Google Gemini (`gemini-2.5-flash`) | Generative context synthesis & stream output |
+| **LLM Provider** | Google Gemini (`gemini-3.1-flash-lite`, `gemini-3-flash-preview`, `gemini-3.1-pro-preview`) | Generative context synthesis & stream output |
 | **Language** | Python 3.10+ | Core pipeline orchestration |
 
 ---
